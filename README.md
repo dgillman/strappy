@@ -1,6 +1,6 @@
 Strappy creates a MIME multipart message for use with [CloutInit](https://help.ubuntu.com/community/CloudInit). Files are read from a template directory. If the file ends in .erb it is processed as an embedded Ruby template using the Binding context passed in by the caller of the processTemplates method. Files are assigned a MIME type based on comparing their first lines to those expected of the various file types. Any file that does not match one of the mappings will be given the text/plain type.
 
-* Usage
+# Usage
 
 1. Create a new Strappy object. You must pass it a directory path.
 2. Initialize any variables that you would like to make available to the ERB processor when processing templates
